@@ -262,7 +262,7 @@ fr:
   mail_body_settings_updated: "Les paramètres suivants ont été modifiés :"
   mail_body_password_updated: "Votre mot de passe a été changé."
 
-  field_name: Nom
+  field_name: Nom du projet
   field_description: Description
   field_summary: Résumé
   field_is_required: Obligatoire
@@ -667,7 +667,7 @@ fr:
   label_news_added: Annonce ajoutée
   label_news_comment_added: Commentaire ajouté à une annonce
   label_settings: Configuration
-  label_overview: Aperçu
+  label_overview: Profil du projet
   label_version: Version
   label_version_new: Nouvelle version
   label_version_plural: Versions

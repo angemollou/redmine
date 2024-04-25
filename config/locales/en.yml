@@ -275,7 +275,7 @@ en:
   mail_destroy_project_with_subprojects_successful: Project %{value} and its subprojects were deleted successfully.
 
 
-  field_name: Name
+  field_name: Project name
   field_description: Description
   field_summary: Summary
   field_is_required: Required
@@ -720,7 +720,7 @@ en:
   label_news_added: News added
   label_news_comment_added: Comment added to a news
   label_settings: Settings
-  label_overview: Overview
+  label_overview: Project Profile
   label_version: Version
   label_version_new: New version
   label_version_plural: Versions
