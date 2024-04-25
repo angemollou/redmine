@@ -34,6 +34,12 @@
     <%= textilizable @project.description %>
   </div>
   <% end %>
+  <% if @project.case_for_change.present? %>
+  <div class="wiki">
+    <h3><%=l(:text_project_case_for_change_info)%></h3>
+    <%= textilizable @project.case_for_change %>
+  </div>
+  <% end %>
   <% if @project.homepage.present? || @project.visible_custom_field_values.any? { |o| o.value.present? } %>
   <ul>
   <% unless @project.homepage.blank? %>

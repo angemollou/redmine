@@ -96,17 +96,21 @@ class ProjectsController < ApplicationController
   end
 
   def new
+    puts '--------------------------------------------->new'
     @issue_custom_fields = IssueCustomField.sorted.to_a
     @trackers = Tracker.sorted.to_a
     @project = Project.new
+    puts '---------------------------------------------<new'
     @project.safe_attributes = params[:project]
   end
 
   def create
+    puts '--------------------------------------------->create'
     @issue_custom_fields = IssueCustomField.sorted.to_a
     @trackers = Tracker.sorted.to_a
     @project = Project.new
     @project.safe_attributes = params[:project]
+    puts '---------------------------------------------<create'
 
     if @project.save
       unless User.current.admin?

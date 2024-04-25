@@ -4,7 +4,10 @@
 <!--[form:project]-->
 <p><%= f.text_field :name, :required => true, :size => 60 %></p>
 
-<p><%= f.text_area :description, :rows => 8, :class => 'wiki-edit' %></p>
+<p><%= f.text_area :description, :rows => 8, :class => 'wiki-edit', :label => l(:field_summary), :placeholder => l(:text_project_description_info) %></p>
+
+<p><%= f.text_area :case_for_change, :rows => 8, :class => 'wiki-edit', :label => l(:field_case_for_change), :placeholder => l(:text_project_case_for_change_info) %></p>
+
 <p><%= f.text_field :identifier, :required => true, :size => 60, :disabled => @project.identifier_frozen?, :maxlength => Project::IDENTIFIER_MAX_LENGTH %>
 <% unless @project.identifier_frozen? %>
   <em class="info"><%= l(:text_length_between, :min => 1, :max => Project::IDENTIFIER_MAX_LENGTH) %> <%= l(:text_project_identifier_info).html_safe %></em>

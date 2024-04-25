@@ -685,6 +685,11 @@ class Project < ActiveRecord::Base
     description.gsub(/^(.{#{length}}[^\n\r]*).*$/m, '\1...').strip if description
   end
 
+  # Returns a short case_for_change of the projects (first lines)
+  def short_case_for_change(length = 255)
+    case_for_change.gsub(/^(.{#{length}}[^\n\r]*).*$/m, '\1...').strip if case_for_change
+  end
+
   def css_classes
     s = +'project'
     s << ' root' if root?
@@ -826,6 +831,7 @@ class Project < ActiveRecord::Base
   safe_attributes(
     'name',
     'description',
+    'case_for_change',
     'homepage',
     'identifier',
     'custom_field_values',

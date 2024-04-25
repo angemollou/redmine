@@ -28,6 +28,8 @@ module ProjectsQueriesHelper
           (tag.span(class: 'icon icon-bookmarked-project', title: l(:label_my_bookmarks)) if User.current.bookmarked_project_ids.include?(item.id))
       when :short_description
         item.description? ? content_tag('div', textilizable(item, :short_description), :class => "wiki") : ''
+      when :short_case_for_change
+        item.case_for_change? ? content_tag('div', textilizable(item, :short_case_for_change), :class => "wiki") : ''
       when :homepage
         item.homepage? ? content_tag('div', textilizable(item, :homepage), :class => "wiki") : ''
       when :status
