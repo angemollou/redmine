@@ -7,6 +7,7 @@
 <p><%= f.text_area :description, :rows => 8, :class => 'wiki-edit', :label => l(:field_summary), :placeholder => l(:text_project_description_info) %></p>
 
 <p><%= f.text_area :case_for_change, :rows => 8, :class => 'wiki-edit', :label => l(:field_case_for_change), :placeholder => l(:text_project_case_for_change_info) %></p>
+<p><%= f.text_area :expected_outcomes, :rows => 8, :class => 'wiki-edit', :label => l(:field_expected_outcomes), :placeholder => l(:text_project_expected_outcomes_info) %></p>
 
 <p><%= f.text_field :identifier, :required => true, :size => 60, :disabled => @project.identifier_frozen?, :maxlength => Project::IDENTIFIER_MAX_LENGTH %>
 <% unless @project.identifier_frozen? %>

@@ -33,6 +33,7 @@ class ProjectQuery < Query
     QueryColumn.new(:status, :sortable => "#{Project.table_name}.status"),
     QueryColumn.new(:short_description, :sortable => "#{Project.table_name}.description", :caption => :field_description),
     QueryColumn.new(:short_case_for_change, :sortable => "#{Project.table_name}.case_for_change", :caption => :field_case_for_change),
+    QueryColumn.new(:short_expected_outcomes, :sortable => "#{Project.table_name}.expected_outcomes", :caption => :field_expected_outcomes),
     QueryColumn.new(:homepage, :sortable => "#{Project.table_name}.homepage"),
     QueryColumn.new(:identifier, :sortable => "#{Project.table_name}.identifier"),
     QueryColumn.new(:parent_id, :sortable => "#{Project.table_name}.lft ASC", :default_order => 'desc', :caption => :field_parent),

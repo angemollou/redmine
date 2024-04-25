@@ -30,6 +30,8 @@ module ProjectsQueriesHelper
         item.description? ? content_tag('div', textilizable(item, :short_description), :class => "wiki") : ''
       when :short_case_for_change
         item.case_for_change? ? content_tag('div', textilizable(item, :short_case_for_change), :class => "wiki") : ''
+      when :short_expected_outcomes
+        item.expected_outcomes? ? content_tag('div', textilizable(item, :short_expected_outcomes), :class => "wiki") : ''
       when :homepage
         item.homepage? ? content_tag('div', textilizable(item, :homepage), :class => "wiki") : ''
       when :status

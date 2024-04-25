@@ -690,6 +690,11 @@ class Project < ActiveRecord::Base
     case_for_change.gsub(/^(.{#{length}}[^\n\r]*).*$/m, '\1...').strip if case_for_change
   end
 
+  # Returns a short expected_outcomes of the projects (first lines)
+  def short_expected_outcomes(length = 255)
+    expected_outcomes.gsub(/^(.{#{length}}[^\n\r]*).*$/m, '\1...').strip if expected_outcomes
+  end
+
   def css_classes
     s = +'project'
     s << ' root' if root?
@@ -832,6 +837,7 @@ class Project < ActiveRecord::Base
     'name',
     'description',
     'case_for_change',
+    'expected_outcomes',
     'homepage',
     'identifier',
     'custom_field_values',

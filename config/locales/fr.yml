@@ -265,6 +265,7 @@ fr:
   field_name: Nom du projet
   field_description: Description
   field_case_for_change: Arguments en faveur du changement
+  field_expected_outcomes: Résultats escomptés
   field_summary: Résumé
   field_is_required: Obligatoire
   field_firstname: Prénom
@@ -1111,6 +1112,7 @@ fr:
   text_tip_issue_begin_end_day: tâche commençant et finissant ce jour
   text_project_description_info: En quoi consiste ce projet ?
   text_project_case_for_change_info: Pourquoi ce projet est-il nécessaire ? Quel problème tente-t-il de résoudre ?
+  text_project_expected_outcomes_info: Qu’est-ce que le projet produira ou changera ?
   text_project_identifier_info: 'Seuls les lettres minuscules (a-z), chiffres, tirets et tirets bas sont autorisés.<br />Un fois sauvegardé, l''identifiant ne pourra plus être modifié.'
   text_caracters_maximum: "%{count} caractères maximum."
   text_caracters_minimum: "%{count} caractères minimum."

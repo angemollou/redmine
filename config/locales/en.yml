@@ -278,6 +278,7 @@ en:
   field_name: Project name
   field_description: Description
   field_case_for_change: Case for Change
+  field_expected_outcomes: Expected Outcomes
   field_summary: Summary
   field_is_required: Required
   field_firstname: First name
@@ -1249,6 +1250,7 @@ en:
   text_tip_issue_begin_end_day: issue beginning and ending this day
   text_project_description_info: En quoi consiste ce projet ?
   text_project_case_for_change_info: Pourquoi ce projet est-il nécessaire ? Quel problème tente-t-il de résoudre ?
+  text_project_expected_outcomes_info: Qu’est-ce que le projet produira ou changera ?
   text_project_identifier_info: 'Only lower case letters (a-z), numbers, dashes and underscores are allowed.<br />Once saved, the identifier cannot be changed.'
   text_caracters_maximum: "%{count} characters maximum."
   text_caracters_minimum: "Must be at least %{count} characters long."

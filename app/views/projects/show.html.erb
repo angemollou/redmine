@@ -34,12 +34,6 @@
     <%= textilizable @project.description %>
   </div>
   <% end %>
-  <% if @project.case_for_change.present? %>
-  <div class="wiki">
-    <h3><%=l(:text_project_case_for_change_info)%></h3>
-    <%= textilizable @project.case_for_change %>
-  </div>
-  <% end %>
   <% if @project.homepage.present? || @project.visible_custom_field_values.any? { |o| o.value.present? } %>
   <ul>
   <% unless @project.homepage.blank? %>
@@ -49,6 +43,18 @@
     <li class="<%= custom_field.css_classes %>"><span class="label"><%= custom_field.name %>:</span> <%= formatted %></li>
   <% end %>
   </ul>
+  <% end %>
+  <% if @project.case_for_change.present? %>
+  <div class="wiki">
+    <h3><%=l(:text_project_case_for_change_info)%></h3>
+    <%= textilizable @project.case_for_change %>
+  </div>
+  <% end %>
+  <% if @project.expected_outcomes.present? %>
+  <div class="wiki">
+    <h3><%=l(:text_project_expected_outcomes_info)%></h3>
+    <%= textilizable @project.expected_outcomes %>
+  </div>
   <% end %>
 
   <% if User.current.allowed_to?(:view_issues, @project) %>
