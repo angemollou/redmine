@@ -44,6 +44,7 @@
   <% end %>
   </ul>
   <% end %>
+
   <% if @project.case_for_change.present? %>
   <div class="wiki">
     <h3><%=l(:text_project_case_for_change_info)%></h3>
@@ -56,18 +57,22 @@
     <%= textilizable @project.expected_outcomes %>
   </div>
   <% end %>
-
   <% if @project.project_owner.present? %>
   <div class="wiki">
     <h3><%=l(:field_project_owner)%></h3>
     <%= textilizable @project.project_owner %>
   </div>
   <% end %>
-
   <% if @project.sector.present? %>
   <div class="wiki">
     <h3><%=l(:field_sector)%></h3>
     <%= textilizable @project.sector %>
+  </div>
+  <% end %>
+  <% if @project.location.present? %>
+  <div class="wiki">
+    <h3><%=l(:field_location)%></h3>
+    <%= textilizable @project.location %>
   </div>
   <% end %>
 

@@ -847,6 +847,7 @@ class Project < ActiveRecord::Base
     'expected_outcomes',
     'project_owner',
     'sector',
+    'location',
     'homepage',
     'identifier',
     'custom_field_values',

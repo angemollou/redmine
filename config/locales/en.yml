@@ -281,6 +281,7 @@ en:
   field_expected_outcomes: Expected Outcomes
   field_project_owner: Project Owner
   field_sector: Sector
+  field_location: Location
   field_summary: Summary
   field_is_required: Required
   field_firstname: First name
