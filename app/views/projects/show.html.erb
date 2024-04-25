@@ -75,6 +75,12 @@
     <%= textilizable @project.location %>
   </div>
   <% end %>
+  <% if @project.source_of_funding.present? %>
+  <div class="wiki">
+    <h3><%=l(:field_source_of_funding)%></h3>
+    <%= textilizable @project.source_of_funding %>
+  </div>
+  <% end %>
 
   <% if User.current.allowed_to?(:view_issues, @project) %>
   <div class="issues box">

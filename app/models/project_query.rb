@@ -37,6 +37,7 @@ class ProjectQuery < Query
     QueryColumn.new(:project_owner, :sortable => "#{Project.table_name}.project_owner", :caption => :field_project_owner),
     QueryColumn.new(:sector, :sortable => "#{Project.table_name}.sector", :caption => :field_sector),
     QueryColumn.new(:location, :sortable => "#{Project.table_name}.location", :caption => :field_location),
+    QueryColumn.new(:source_of_funding, :sortable => "#{Project.table_name}.source_of_funding", :caption => :field_source_of_funding),
     QueryColumn.new(:homepage, :sortable => "#{Project.table_name}.homepage"),
     QueryColumn.new(:identifier, :sortable => "#{Project.table_name}.identifier"),
     QueryColumn.new(:parent_id, :sortable => "#{Project.table_name}.lft ASC", :default_order => 'desc', :caption => :field_parent),

@@ -282,6 +282,7 @@ en:
   field_project_owner: Project Owner
   field_sector: Sector
   field_location: Location
+  field_source_of_funding: Source of Funding
   field_summary: Summary
   field_is_required: Required
   field_firstname: First name

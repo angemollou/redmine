@@ -269,6 +269,7 @@ fr:
   field_project_owner: Responsable du projet
   field_sector: Secteur
   field_location: Localisation
+  field_source_of_funding: Source de Financement
   field_summary: Résumé
   field_is_required: Obligatoire
   field_firstname: Prénom
