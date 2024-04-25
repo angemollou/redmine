@@ -39,6 +39,8 @@
 /tmp/thumbnails/*
 /vendor/cache
 *.rbc
+/.vscode
+/.devcontainer
 
 /.bundle
 /Gemfile.lock
