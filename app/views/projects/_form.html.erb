@@ -10,6 +10,7 @@
 <p><%= f.text_area :expected_outcomes, :rows => 8, :class => 'wiki-edit', :label => l(:field_expected_outcomes), :placeholder => l(:text_project_expected_outcomes_info) %></p>
 <% # TODO: use defaul_project_owner %>
 <p><%= f.text_area :project_owner, :rows => 4, :class => 'wiki-edit', :label => l(:field_project_owner), :placeholder => l(:text_project_project_owner_info) %></p>
+<p><%= f.text_field :sector, :size => 60 %></p>
 
 <p><%= f.text_field :identifier, :required => true, :size => 60, :disabled => @project.identifier_frozen?, :maxlength => Project::IDENTIFIER_MAX_LENGTH %>
 <% unless @project.identifier_frozen? %>

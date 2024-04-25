@@ -64,6 +64,13 @@
   </div>
   <% end %>
 
+  <% if @project.sector.present? %>
+  <div class="wiki">
+    <h3><%=l(:field_sector)%></h3>
+    <%= textilizable @project.sector %>
+  </div>
+  <% end %>
+
   <% if User.current.allowed_to?(:view_issues, @project) %>
   <div class="issues box">
     <h3 class="icon icon-issue">

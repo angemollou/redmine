@@ -846,6 +846,7 @@ class Project < ActiveRecord::Base
     'case_for_change',
     'expected_outcomes',
     'project_owner',
+    'sector',
     'homepage',
     'identifier',
     'custom_field_values',
