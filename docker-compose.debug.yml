@@ -7,6 +7,7 @@ services:
       dockerfile: ./Dockerfile
       args:
         - RUBY_ENV=development
+        - REDMINE_LANG=en
     # ports:
     #   - 3000:3000
     # command: [rails, s]

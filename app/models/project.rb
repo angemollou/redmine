@@ -695,6 +695,13 @@ class Project < ActiveRecord::Base
     expected_outcomes.gsub(/^(.{#{length}}[^\n\r]*).*$/m, '\1...').strip if expected_outcomes
   end
 
+  # Returns a default project_owner
+  def default_project_owner
+    # TODO: FIX
+    manager = members.where(:roles => {:name => l(:default_role_manager)}).first!.user || User.current
+    "#{manager.lastname.upcase} #{manager.firstname.upcase}\nTel: #{manager.mobile}\nE-mail: #{manager.email}"
+  end
+
   def css_classes
     s = +'project'
     s << ' root' if root?
@@ -838,6 +845,7 @@ class Project < ActiveRecord::Base
     'description',
     'case_for_change',
     'expected_outcomes',
+    'project_owner',
     'homepage',
     'identifier',
     'custom_field_values',

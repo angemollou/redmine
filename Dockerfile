@@ -2,6 +2,8 @@ FROM ruby:3.2
 
 ARG RUBY_ENV
 
+ARG REDMINE_LANG
+ENV REDMINE_LANG=$REDMINE_LANG
 
 # throw errors if Gemfile has been modified since Gemfile.lock
 RUN if [[ "${RUBY_ENV}" = 'production' ]]; then bundle config --global frozen 1; fi

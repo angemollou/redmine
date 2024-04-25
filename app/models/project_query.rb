@@ -34,6 +34,7 @@ class ProjectQuery < Query
     QueryColumn.new(:short_description, :sortable => "#{Project.table_name}.description", :caption => :field_description),
     QueryColumn.new(:short_case_for_change, :sortable => "#{Project.table_name}.case_for_change", :caption => :field_case_for_change),
     QueryColumn.new(:short_expected_outcomes, :sortable => "#{Project.table_name}.expected_outcomes", :caption => :field_expected_outcomes),
+    QueryColumn.new(:project_owner, :sortable => "#{Project.table_name}.project_owner", :caption => :field_project_owner),
     QueryColumn.new(:homepage, :sortable => "#{Project.table_name}.homepage"),
     QueryColumn.new(:identifier, :sortable => "#{Project.table_name}.identifier"),
     QueryColumn.new(:parent_id, :sortable => "#{Project.table_name}.lft ASC", :default_order => 'desc', :caption => :field_parent),

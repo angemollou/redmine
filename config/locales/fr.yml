@@ -266,6 +266,7 @@ fr:
   field_description: Description
   field_case_for_change: Arguments en faveur du changement
   field_expected_outcomes: Résultats escomptés
+  field_project_owner: Responsable du projet
   field_summary: Résumé
   field_is_required: Obligatoire
   field_firstname: Prénom
@@ -1113,6 +1114,10 @@ fr:
   text_project_description_info: En quoi consiste ce projet ?
   text_project_case_for_change_info: Pourquoi ce projet est-il nécessaire ? Quel problème tente-t-il de résoudre ?
   text_project_expected_outcomes_info: Qu’est-ce que le projet produira ou changera ?
+  text_project_project_owner_info: |
+    NOM Prénom(s)
+    Tel: 07 00 00 00 00 / 01 00 00 00 00 / 05 00 00 00 00
+    E-mail: nomdutilisateur@example.com
   text_project_identifier_info: 'Seuls les lettres minuscules (a-z), chiffres, tirets et tirets bas sont autorisés.<br />Un fois sauvegardé, l''identifiant ne pourra plus être modifié.'
   text_caracters_maximum: "%{count} caractères maximum."
   text_caracters_minimum: "%{count} caractères minimum."
@@ -1178,7 +1183,7 @@ fr:
   text_project_closed: Ce projet est fermé et accessible en lecture seule.
   text_turning_multiple_off: "Si vous désactivez les valeurs multiples, les valeurs multiples seront supprimées pour n'en conserver qu'une par objet."
 
-  default_role_manager: Manager
+  default_role_manager: Responsable du projet
   default_role_developer: Développeur
   default_role_reporter: Rapporteur
   default_tracker_bug: Anomalie
