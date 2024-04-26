@@ -176,12 +176,24 @@
       <% end %>
     </div>
   </div>
-  <% if @project.project_owner.present? %>
-  <div class="wiki">
-    <h3><%=l(:field_project_owner)%></h3>
-    <%= textilizable @project.project_owner %>
+  <div class="splitcontent">
+    <div class="splitcontentleft">
+      <% if @project.project_owner.present? %>
+      <div class="wiki">
+        <h3><%=l(:field_project_owner)%></h3>
+        <%= textilizable @project.project_owner %>
+      </div>
+      <% end %>
+    </div>
+    <div class="splitcontentright">
+      <% if @project.time_to_impact.present? %>
+      <div class="wiki">
+        <h3><%=l(:field_time_to_impact)%></h3>
+        <%= textilizable @project.time_to_impact %>
+      </div>
+      <% end %>
+    </div>
   </div>
-  <% end %>
   
   <% if @news.any? && authorize_for('news', 'index') %>
   <div class="news box">
