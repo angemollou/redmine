@@ -259,7 +259,7 @@ table.list th, .table-list-header { background-color:#EEEEEE; padding: 4px; whit
 table.list th.whitespace-normal {white-space: normal;}
 table.list td {text-align:center; vertical-align:middle; padding-right:10px;}
 table.list td.id { width: 2%; text-align: center;}
-table.list td.name, table.list td.description, table.list td.case_for_change, table.list td.expected_outcomes, table.list td.project_owner, table.list td.sector, table.list td.location, table.list td.source_of_funding, table.list td._start_date, table.list td._due_date, table.list td.subject, table.list td.parent-subject, table.list td.comments, table.list td.roles, table.list td.attachments, table.list td.text,  table.list td.short_description, table.list td.short_case_for_change, table.list td.short_expected_outcomes {text-align: left;}
+table.list td.name, table.list td.description, table.list td.case_for_change, table.list td.expected_outcomes, table.list td.project_owner, table.list td.sector, table.list td.location, table.list td.source_of_funding, table.list td._start_date, table.list td._due_date, table.list td.impact, table.list td.subject, table.list td.parent-subject, table.list td.comments, table.list td.roles, table.list td.attachments, table.list td.text,  table.list td.short_description, table.list td.short_case_for_change, table.list td.short_expected_outcomes {text-align: left;}
 
 table.list td.attachments span {display: block; height: 16px;}
 table.list td.attachments span a.icon-download {display: inline-block; visibility: hidden;}

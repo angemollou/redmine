@@ -851,6 +851,7 @@ class Project < ActiveRecord::Base
     'source_of_funding',
     '_start_date',
     '_due_date',
+    'impact',
     'homepage',
     'identifier',
     'custom_field_values',

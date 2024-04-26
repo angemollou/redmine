@@ -283,6 +283,7 @@ en:
   field_sector: Sector
   field_location: Location
   field_source_of_funding: Source of Funding
+  field_impact: Impact
   field_summary: Summary
   field_is_required: Required
   field_firstname: First name
@@ -1259,6 +1260,7 @@ en:
     LASTNAME Firstname(s)
     Tel: 07 00 00 00 00 / 01 00 00 00 00 / 05 00 00 00 00
     E-mail: username@example.com
+  text_project_impact_info: Quel est l’impact attendu de ce projet? (PIB, emplois, etc.)
   text_project_identifier_info: 'Only lower case letters (a-z), numbers, dashes and underscores are allowed.<br />Once saved, the identifier cannot be changed.'
   text_caracters_maximum: "%{count} characters maximum."
   text_caracters_minimum: "Must be at least %{count} characters long."
