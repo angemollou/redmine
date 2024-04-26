@@ -849,6 +849,7 @@ class Project < ActiveRecord::Base
     'sector',
     'location',
     'source_of_funding',
+    '_start_date',
     'homepage',
     'identifier',
     'custom_field_values',

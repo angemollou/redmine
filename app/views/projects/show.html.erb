@@ -57,18 +57,6 @@
     <%= textilizable @project.expected_outcomes %>
   </div>
   <% end %>
-  <% if @project.project_owner.present? %>
-  <div class="wiki">
-    <h3><%=l(:field_project_owner)%></h3>
-    <%= textilizable @project.project_owner %>
-  </div>
-  <% end %>
-  <% if @project.sector.present? %>
-  <div class="wiki">
-    <h3><%=l(:field_sector)%></h3>
-    <%= textilizable @project.sector %>
-  </div>
-  <% end %>
   <% if @project.location.present? %>
   <div class="wiki">
     <h3><%=l(:field_location)%></h3>
@@ -158,6 +146,29 @@
 </div>
 
 <div class="splitcontentright">
+  <% if @project.sector.present? %>
+  <div class="wiki">
+    <h3><%=l(:field_sector)%></h3>
+    <%= textilizable @project.sector %>
+  </div>
+  <% end %>
+  <div class="splitcontent">
+    <div class="splitcontentleft">
+      <% if @project._start_date.present? %>
+      <div class="wiki">
+        <h3><%=l(:field_start_date)%></h3>
+        <%= textilizable @project._start_date.to_s %>
+      </div>
+      <% end %>
+    </div>
+  </div>
+  <% if @project.project_owner.present? %>
+  <div class="wiki">
+    <h3><%=l(:field_project_owner)%></h3>
+    <%= textilizable @project.project_owner %>
+  </div>
+  <% end %>
+  
   <% if @news.any? && authorize_for('news', 'index') %>
   <div class="news box">
     <h3 class="icon icon-news"><%=l(:label_news_latest)%></h3>
