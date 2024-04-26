@@ -853,6 +853,7 @@ class Project < ActiveRecord::Base
     '_due_date',
     'impact',
     'time_to_impact',
+    'deliverables',
     'homepage',
     'identifier',
     'custom_field_values',

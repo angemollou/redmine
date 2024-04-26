@@ -75,6 +75,12 @@
     <%= textilizable @project.impact %>
   </div>
   <% end %>
+  <% if @project.deliverables.present? %>
+  <div class="wiki">
+    <h3><%=l(:text_project_deliverables_info)%></h3>
+    <%= textilizable @project.deliverables %>
+  </div>
+  <% end %>
 
   <% if User.current.allowed_to?(:view_issues, @project) %>
   <div class="issues box">

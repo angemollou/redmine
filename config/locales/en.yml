@@ -285,6 +285,7 @@ en:
   field_source_of_funding: Source of Funding
   field_impact: Impact
   field_time_to_impact: Time to impact
+  field_deliverables: Deliverables
   field_summary: Summary
   field_is_required: Required
   field_firstname: First name
@@ -1263,6 +1264,7 @@ en:
     E-mail: username@example.com
   text_project_impact_info: Quel est l’impact attendu de ce projet? (PIB, emplois, etc.)
   text_project_time_to_impact_info: Dans combien de temps l’impact sera-t-il vu? (6 mois / 1 an / etc)
+  text_project_deliverables_info: Quels sont les livrables clés du projet ? Infrastructures, documents, ouvrages, Œuvres ?
   text_project_identifier_info: 'Only lower case letters (a-z), numbers, dashes and underscores are allowed.<br />Once saved, the identifier cannot be changed.'
   text_caracters_maximum: "%{count} characters maximum."
   text_caracters_minimum: "Must be at least %{count} characters long."

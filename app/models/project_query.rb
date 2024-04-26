@@ -42,6 +42,7 @@ class ProjectQuery < Query
     QueryColumn.new(:_due_date, :sortable => "#{Project.table_name}._due_date", :caption => :field_due_date),
     QueryColumn.new(:impact, :sortable => "#{Project.table_name}.impact", :caption => :field_impact),
     QueryColumn.new(:time_to_impact, :sortable => "#{Project.table_name}.time_to_impact", :caption => :field_time_to_impact),
+    QueryColumn.new(:deliverables, :sortable => "#{Project.table_name}.deliverables", :caption => :field_deliverables),
     QueryColumn.new(:homepage, :sortable => "#{Project.table_name}.homepage"),
     QueryColumn.new(:identifier, :sortable => "#{Project.table_name}.identifier"),
     QueryColumn.new(:parent_id, :sortable => "#{Project.table_name}.lft ASC", :default_order => 'desc', :caption => :field_parent),
