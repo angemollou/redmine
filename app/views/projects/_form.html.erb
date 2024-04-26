@@ -13,8 +13,8 @@
 <p><%= f.text_field :sector, :size => 60 %></p>
 <p><%= f.text_area :location, :rows => 8, :class => 'wiki-edit', :label => l(:field_location) %></p>
 <p><%= f.text_area :source_of_funding, :rows => 8, :class => 'wiki-edit', :label => l(:field_source_of_funding) %></p>
-<% # TODO: use defaul_project_owner %>
-<p><%= f.date_field :_start_date, :size => 10, :required => true %><%= calendar_for('project__start_date') %></p>
+<p><%= f.date_field :_start_date, :size => 10, :label => l(:field_start_date), :required => true %><%= calendar_for('project__start_date') %></p>
+<p><%= f.date_field :_due_date, :size => 10, :label => l(:field_due_date) %><%= calendar_for('project__due_date') %></p>
 
 <p><%= f.text_field :identifier, :required => true, :size => 60, :disabled => @project.identifier_frozen?, :maxlength => Project::IDENTIFIER_MAX_LENGTH %>
 <% unless @project.identifier_frozen? %>

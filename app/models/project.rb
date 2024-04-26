@@ -850,6 +850,7 @@ class Project < ActiveRecord::Base
     'location',
     'source_of_funding',
     '_start_date',
+    '_due_date',
     'homepage',
     'identifier',
     'custom_field_values',

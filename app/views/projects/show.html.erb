@@ -161,6 +161,14 @@
       </div>
       <% end %>
     </div>
+    <div class="splitcontentright">
+      <% if @project._due_date.present? %>
+      <div class="wiki">
+        <h3><%=l(:field_due_date)%></h3>
+        <%= textilizable @project._due_date.to_s %>
+      </div>
+      <% end %>
+    </div>
   </div>
   <% if @project.project_owner.present? %>
   <div class="wiki">
