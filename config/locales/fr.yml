@@ -303,6 +303,7 @@ fr:
   field_is_default: Valeur par défaut
   field_tracker: Tracker
   field_subject: Sujet
+  field_issue_subject: Étape
   field_due_date: Date de fin
   field_assigned_to: Assigné à
   field_priority: Priorité
@@ -1280,7 +1281,7 @@ fr:
   setting_show_status_changes_in_mail_subject: "Inclure les changements de statut des demandes dans le sujet des notifications"
   label_preferred_body_part_text: "Texte"
   label_preferred_body_part_html: "HTML"
-  field_parent_issue_subject: "Sujet de la étape importante parent"
+  field_parent_issue_subject: "Désignation de l'étape importante parente"
   permission_edit_own_issues: "Modifier ses propres étapes importantes"
   text_select_apply_tracker: "Sélectionner un tracker"
   label_updated_issues: "Étapes importantes mises à jour"
@@ -1320,7 +1321,7 @@ fr:
   label_assign_to_me: M'assigner
   notice_issue_not_closable_by_open_tasks: Cette étape importante ne peut pas être fermée car elle contient au moins une sous-étape encore ouverte.
   notice_issue_not_closable_by_blocking_issue: Cette étape importante ne peut pas être fermée car elle est bloqué par au moins une étape importante encore ouverte.
-  notice_issue_not_reopenable_by_closed_parent_issue: Cette étape importante ne peut être réouverte car sa étape importante parente est fermée.
+  notice_issue_not_reopenable_by_closed_parent_issue: Cette étape importante ne peut être réouverte car son étape parente est fermée.
   error_bulk_download_size_too_big: Ces pièces jointes ne peuvent pas être téléchargées en masse car
     la taille totale des fichiers dépasse la taille maximale autorisée (%{max_size})
   setting_bulk_download_max_size: Taille totale maximale du téléchargement groupé
