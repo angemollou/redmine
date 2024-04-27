@@ -240,7 +240,7 @@ fr:
   error_ldap_bind_credentials: "Identifiant ou mot de passe LDAP incorrect"
   error_no_tracker_allowed_for_new_issue_in_project: "Le projet ne dispose d'aucun tracker sur lequel vous pouvez créer une étape importante"
   error_no_projects_with_tracker_allowed_for_new_issue: "Aucun projet ne dispose d'un tracker sur lequel vous pouvez créer une étape importante"
-  error_move_of_child_not_possible: "La sous-tâche %{child} n'a pas pu être déplacée dans le nouveau projet : %{errors}"
+  error_move_of_child_not_possible: "La sous-étape %{child} n'a pas pu être déplacée dans le nouveau projet : %{errors}"
   error_cannot_reassign_time_entries_to_an_issue_about_to_be_deleted: "Le temps passé ne peut pas être réaffecté à une étape importante qui va être supprimée"
   warning_fields_cleared_on_bulk_edit: "Les changements apportés entraîneront la suppression automatique des valeurs d'un ou plusieurs champs sur les objets sélectionnés"
   error_exceeds_maximum_hours_per_day: "Impossible de saisir plus de %{max_hours} heures pour le même jour (%{logged_hours} heures ont déjà été saisies)"
@@ -426,7 +426,7 @@ fr:
   setting_time_format: Format d'heure
   setting_timespan_format: Format des temps en heures
   setting_cross_project_issue_relations: Autoriser les relations entre étapes importantes de différents projets
-  setting_cross_project_subtasks: Autoriser les sous-tâches dans des projets différents
+  setting_cross_project_subtasks: Autoriser les sous-étapes dans des projets différents
   setting_issue_list_default_columns: Colonnes affichées par défaut sur la liste des étapes importantes
   setting_repositories_encodings: Encodages des fichiers et des dépôts
   setting_emails_header: En-tête des emails
@@ -552,7 +552,7 @@ fr:
   permission_delete_messages: Supprimer les messages
   permission_delete_own_messages: Supprimer ses propres messages
   permission_export_wiki_pages: Exporter les pages
-  permission_manage_subtasks: Gérer les sous-tâches
+  permission_manage_subtasks: Gérer les sous-étapes
   permission_manage_related_issues: Gérer les étapes importantes associées
   permission_import_issues: Importer des étapes importantes
 
@@ -935,7 +935,7 @@ fr:
   label_missing_api_access_key: Clé d'accès API manquante
   label_api_access_key_created_on: Clé d'accès API créée il y a %{value}
   label_profile: Profil
-  label_subtask_plural: Sous-tâches
+  label_subtask_plural: Sous-étapes
   label_project_copy_notifications: Envoyer les notifications durant la copie du projet
   label_principal_search: "Rechercher un utilisateur ou un groupe :"
   label_user_search: "Rechercher un utilisateur :"
@@ -949,7 +949,7 @@ fr:
   label_child_revision: Enfant
   label_export_options: Options d'exportation %{export_format}
   label_copy_attachments: Copier les fichiers
-  label_copy_subtasks: Copier les sous-tâches
+  label_copy_subtasks: Copier les sous-étapes
   label_item_position: "%{position} sur %{count}"
   label_completed_versions: Versions passées
   label_search_for_watchers: Rechercher des observateurs
@@ -1235,8 +1235,8 @@ fr:
   description_wiki_subpages_reassign: Choisir une nouvelle page parent
   text_repository_identifier_info: 'Seuls les lettres minuscules (a-z), chiffres, tirets et tirets bas sont autorisés.<br />Un fois sauvegardé, l''identifiant ne pourra plus être modifié.'
   text_allowed_queries_to_select: Seuls les rapports publics (pour tous les utilisateurs) sont sélectionnables
-  label_parent_task_attributes_derived: Calculé à partir des sous-tâches
-  label_parent_task_attributes_independent: Indépendent des sous-tâches
+  label_parent_task_attributes_derived: Calculé à partir des sous-étapes
+  label_parent_task_attributes_independent: Indépendent des sous-étapes
   mail_subject_security_notification: Notification de sécurité
   mail_body_security_notification_change: ! '%{field} modifié(e).'
   mail_body_security_notification_change_to: ! '%{field} changé(e) en %{value}.'
@@ -1267,7 +1267,7 @@ fr:
   error_token_expired: "Ce lien de récupération de votre mot de passe a expiré, veuillez recommencer."
   error_spent_on_future_date: "Impossible d'enregistrer un temps passé sur une date future"
   setting_timelog_accept_future_dates: "Autoriser la saisie de temps sur une date future"
-  label_delete_link_to_subtask: "Supprimer la relation avec la sous-tâche"
+  label_delete_link_to_subtask: "Supprimer la relation avec la sous-étape"
   error_not_allowed_to_log_time_for_other_users: "Vous n'êtes pas autorisé à saisir le temps passé pour d'autres utilisateurs"
   permission_log_time_for_other_users: "Saisir le temps passé pour d'autres utilisateurs"
   label_inherited_from_parent_project: "Hérité du projet parent"
@@ -1398,7 +1398,7 @@ fr:
     Pour confirmer, veuillez entrer l'identifiant (%{login}) ci dessous.
   text_project_destroy_enter_identifier: Pour confirmer, veuillez saisir l'identifiant du projet
     (%{identifier}) ci dessous.
-  button_add_subtask: Ajouter une sous-tâche
+  button_add_subtask: Ajouter une sous-étape
   notice_invalid_watcher: "Observateur non valide: l'utilisateur ne recevra aucune notification
     car il n'a pas accès pour afficher cet objet."
   button_fetch_changesets: Récupérer les commits
@@ -1433,7 +1433,7 @@ fr:
     Merci de redémarrer l'application après l'avoir modifiée.
   label_bulk_edit: Edition par lot
   button_create_and_follow: Créer et suivre
-  label_subtask: Sous-tâches
+  label_subtask: Sous-étapes
   label_default_query: Rapport par défaut
   field_default_project_query: Rapport par défaut du project
   label_required_administrators: requis pour les administrateurs

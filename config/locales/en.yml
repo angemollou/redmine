@@ -228,7 +228,7 @@ en:
   error_ldap_bind_credentials: "Invalid LDAP Account/Password"
   error_no_tracker_allowed_for_new_issue_in_project: "The project doesn't have any trackers for which you can create an important step"
   error_no_projects_with_tracker_allowed_for_new_issue: "There are no projects with trackers for which you can create an important step"
-  error_move_of_child_not_possible: "Subtask %{child} could not be moved to the new project: %{errors}"
+  error_move_of_child_not_possible: "Substep %{child} could not be moved to the new project: %{errors}"
   error_cannot_reassign_time_entries_to_an_issue_about_to_be_deleted: "Spent time cannot be reassigned to an important step that is about to be deleted"
   warning_fields_cleared_on_bulk_edit: "Changes will result in the automatic deletion of values from one or more fields on the selected objects"
   error_exceeds_maximum_hours_per_day: "Cannot log more than %{max_hours} hours on the same day (%{logged_hours} hours have already been logged)"
@@ -454,7 +454,7 @@ en:
   setting_time_format: Time format
   setting_timespan_format: Time span format
   setting_cross_project_issue_relations: Allow cross-project important step relations
-  setting_cross_project_subtasks: Allow cross-project subtasks
+  setting_cross_project_subtasks: Allow cross-project substeps
   setting_issue_list_default_columns: Important steps list defaults
   setting_repositories_encodings: Attachments and repositories encodings
   setting_emails_header: Email header
@@ -598,7 +598,7 @@ en:
   permission_add_message_watchers: Add message watchers
   permission_delete_message_watchers: Delete message watchers
   permission_export_wiki_pages: Export wiki pages
-  permission_manage_subtasks: Manage subtasks
+  permission_manage_subtasks: Manage substeps
   permission_manage_related_issues: Manage related important steps
   permission_import_issues: Import important steps
   permission_log_time_for_other_users: Log spent time for other users
@@ -898,7 +898,7 @@ en:
   label_relation_new: New relation
   label_relation_delete: Delete relation
   label_relates_to: Related to
-  label_delete_link_to_subtask: Delete link to subtask
+  label_delete_link_to_subtask: Delete link to substep
   label_duplicates: Is duplicate of
   label_duplicated_by: Has duplicate
   label_blocks: Blocks
@@ -1015,8 +1015,8 @@ en:
   label_missing_api_access_key: Missing an API access key
   label_api_access_key_created_on: "API access key created %{value} ago"
   label_profile: Profile
-  label_subtask: Subtask
-  label_subtask_plural: Subtasks
+  label_subtask: Substep
+  label_subtask_plural: Substeps
   label_project_copy_notifications: Send email notifications during the project copy
   label_import_notifications: Send email notifications during the import
   label_principal_search: "Search for user or group:"
@@ -1031,7 +1031,7 @@ en:
   label_child_revision: Child
   label_export_options: "%{export_format} export options"
   label_copy_attachments: Copy attachments
-  label_copy_subtasks: Copy subtasks
+  label_copy_subtasks: Copy substeps
   label_item_position: "%{position} of %{count}"
   label_completed_versions: Completed versions
   label_search_for_watchers: Search for watchers to add
@@ -1085,8 +1085,8 @@ en:
   label_disable_notifications: Disable notifications
   label_blank_value: blank
   label_parent_task_attributes: Parent tasks attributes
-  label_parent_task_attributes_derived: Calculated from subtasks
-  label_parent_task_attributes_independent: Independent of subtasks
+  label_parent_task_attributes_derived: Calculated from substeps
+  label_parent_task_attributes_independent: Independent of substeps
   label_time_entries_visibility_all: All time entries
   label_time_entries_visibility_own: Time entries created by the user
   label_member_management: Member management
@@ -1208,7 +1208,7 @@ en:
   button_project_bookmark_delete: Remove bookmark
   button_filter: Filter
   button_actions: Actions
-  button_add_subtask: Add subtask
+  button_add_subtask: Add substep
   button_save_object: "Save %{object_name}"
   button_edit_object: "Edit %{object_name}"
   button_delete_object: "Delete %{object_name}"
