@@ -293,7 +293,8 @@ fr:
   field_min_length: Longueur minimum
   field_max_length: Longueur maximum
   field_value: Valeur
-  field_category: Catégorie
+  field_category: Categorie
+  field_issue_category: Composante
   field_title: Titre
   field_project: Projet
   field_issue: Étape importante
@@ -498,7 +499,7 @@ fr:
   permission_manage_members: Gérer les membres
   permission_manage_project_activities: Gérer les activités
   permission_manage_versions: Gérer les versions
-  permission_manage_categories: Gérer les catégories de demandes
+  permission_manage_categories: Gérer les composantes de étapes importantes
   permission_view_issues: Voir les étapes importantes
   permission_add_issues: Créer des étapes importantes
   permission_edit_issues: Modifier les étapes importantes
@@ -612,9 +613,9 @@ fr:
   label_issue_status: Statut de étapes importantes
   label_issue_status_plural: Statuts de étapes importantes
   label_issue_status_new: Nouveau statut
-  label_issue_category: Catégorie de étapes importantes
-  label_issue_category_plural: Catégories de étapes importantes
-  label_issue_category_new: Nouvelle catégorie
+  label_issue_category: Composante de étapes importantes
+  label_issue_category_plural: Composante de étapes importantes
+  label_issue_category_new: Nouvelle composante
   label_custom_field: Champ personnalisé
   label_custom_field_plural: Champs personnalisés
   label_custom_field_new: Nouveau champ personnalisé
@@ -1140,9 +1141,9 @@ fr:
   text_issue_added: "La étape importante %{id} a été soumise par %{author}."
   text_issue_updated: "La étape importante %{id} a été mise à jour par %{author}."
   text_wiki_destroy_confirmation: Etes-vous sûr de vouloir supprimer ce wiki et tout son contenu ?
-  text_issue_category_destroy_question: "%{count} étapes importantes sont affectées à cette catégorie. Que voulez-vous faire ?"
-  text_issue_category_destroy_assignments: N'affecter les étapes importantes à aucune autre catégorie
-  text_issue_category_reassign_to: Réaffecter les étapes importantes à cette catégorie
+  text_issue_category_destroy_question: "%{count} étapes importantes sont affectées à cette composante. Que voulez-vous faire ?"
+  text_issue_category_destroy_assignments: N'affecter les étapes importantes à aucune autre composante
+  text_issue_category_reassign_to: Réaffecter les étapes importantes à cette composante
   text_user_mail_option: "Pour les projets non sélectionnés, vous recevrez seulement des notifications pour ce que vous surveillez ou à quoi vous participez (exemple: demandes dont vous êtes l'auteur ou la personne assignée)."
   text_no_configuration_data: "Les rôles, trackers, statuts et le workflow ne sont pas encore paramétrés.\nIl est vivement recommandé de charger le paramétrage par defaut. Vous pourrez le modifier une fois chargé."
   text_load_default_configuration: Charger le paramétrage par défaut
@@ -1231,7 +1232,7 @@ fr:
   description_available_columns: Colonnes disponibles
   description_selected_columns: Colonnes sélectionnées
   description_all_columns: Toutes les colonnes
-  description_issue_category_reassign: Choisir une catégorie
+  description_issue_category_reassign: Choisir une composante
   description_wiki_subpages_reassign: Choisir une nouvelle page parent
   text_repository_identifier_info: 'Seuls les lettres minuscules (a-z), chiffres, tirets et tirets bas sont autorisés.<br />Un fois sauvegardé, l''identifiant ne pourra plus être modifié.'
   text_allowed_queries_to_select: Seuls les rapports publics (pour tous les utilisateurs) sont sélectionnables

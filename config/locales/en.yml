@@ -307,6 +307,7 @@ en:
   field_max_length: Maximum length
   field_value: Value
   field_category: Category
+  field_issue_category: Component
   field_title: Title
   field_project: Project
   field_issue: Important step
@@ -537,7 +538,7 @@ en:
   permission_manage_members: Manage members
   permission_manage_project_activities: Manage project activities
   permission_manage_versions: Manage versions
-  permission_manage_categories: Manage issue categories
+  permission_manage_categories: Manage important step components
   permission_view_issues: View Important steps
   permission_add_issues: Add important steps
   permission_edit_issues: Edit important steps
@@ -660,9 +661,9 @@ en:
   label_issue_status: Important step status
   label_issue_status_plural: Important step statuses
   label_issue_status_new: New status
-  label_issue_category: Important step category
-  label_issue_category_plural: Important step categories
-  label_issue_category_new: New category
+  label_issue_category: Important step component
+  label_issue_category_plural: Important step somponents
+  label_issue_category_new: New component
   label_custom_field: Custom field
   label_custom_field_plural: Custom fields
   label_custom_field_new: New custom field
@@ -1281,9 +1282,9 @@ en:
   text_issue_added: "Important step %{id} has been reported by %{author}."
   text_issue_updated: "Important step %{id} has been updated by %{author}."
   text_wiki_destroy_confirmation: Are you sure you want to delete this wiki and all its content?
-  text_issue_category_destroy_question: "Some important steps (%{count}) are assigned to this category. What do you want to do?"
-  text_issue_category_destroy_assignments: Remove category assignments
-  text_issue_category_reassign_to: Reassign important steps to this category
+  text_issue_category_destroy_question: "Some important steps (%{count}) are assigned to this component. What do you want to do?"
+  text_issue_category_destroy_assignments: Remove component assignments
+  text_issue_category_reassign_to: Reassign important steps to this component
   text_user_mail_option: "For unselected projects, you will only receive notifications about things you watch or you're involved in (eg. issues you're the author or assignee)."
   text_no_configuration_data: "Roles, trackers, issue statuses and workflow have not been configured yet.\nIt is highly recommended to load the default configuration. You will be able to modify it once loaded."
   text_load_default_configuration: Load the default configuration
@@ -1381,7 +1382,7 @@ en:
   description_available_columns: Available Columns
   description_selected_columns: Selected Columns
   description_all_columns: All Columns
-  description_issue_category_reassign: Choose important step category
+  description_issue_category_reassign: Choose important step component
   description_wiki_subpages_reassign: Choose new parent page
   text_repository_identifier_info: 'Only lower case letters (a-z), numbers, dashes and underscores are allowed.<br />Once saved, the identifier cannot be changed.'
   text_login_required_html: When not requiring authentication, public projects and their contents are openly available on the network. You can <a href="%{anonymous_role_path}">edit the applicable permissions</a>.
