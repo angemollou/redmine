@@ -335,7 +335,7 @@ fr:
   field_attr_mail: Attribut Email
   field_onthefly: Création des utilisateurs à la volée
   field_start_date: Date de début
-  field_done_ratio: "% réalisé"
+  field_done_ratio: "% de réalisations"
   field_auth_source: Mode d'authentification
   field_hide_mail: Cacher mon adresse mail
   field_comments: Commentaire
@@ -451,7 +451,7 @@ fr:
   setting_new_project_user_role_id: Rôle donné à un utilisateur non-administrateur qui crée un projet
   setting_default_projects_modules: Modules activés par défaut pour les nouveaux projets
   setting_issue_done_ratio: Calcul de l'avancement des étapes importantes
-  setting_issue_done_ratio_issue_field: 'Utiliser le champ % effectué'
+  setting_issue_done_ratio_issue_field: 'Utiliser le champ % de réalisations'
   setting_issue_done_ratio_issue_status: Utiliser le statut
   setting_start_of_week: Jour de début des calendriers
   setting_rest_api_enabled: Activer l'API REST
