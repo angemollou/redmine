@@ -33,7 +33,7 @@ class IssueQuery < Query
     QueryColumn.new(:status, :sortable => "#{IssueStatus.table_name}.position", :groupable => true),
     QueryColumn.new(:priority, :sortable => "#{IssuePriority.table_name}.position",
                     :default_order => 'desc', :groupable => true),
-    QueryColumn.new(:subject, :sortable => "#{Issue.table_name}.subject"),
+    QueryColumn.new(:subject, :sortable => "#{Issue.table_name}.subject", :caption => :field_issue_subject),
     QueryColumn.new(:author,
                     :sortable => lambda {User.fields_for_order_statement("authors")},
                     :groupable => true),
@@ -42,7 +42,7 @@ class IssueQuery < Query
                     :groupable => true),
     TimestampQueryColumn.new(:updated_on, :sortable => "#{Issue.table_name}.updated_on",
                              :default_order => 'desc', :groupable => true),
-    QueryColumn.new(:category, :sortable => "#{IssueCategory.table_name}.name", :groupable => true),
+    QueryColumn.new(:category, :sortable => "#{IssueCategory.table_name}.name", :groupable => true, :caption => :field_issue_category),
     QueryColumn.new(:fixed_version, :sortable => lambda {Version.fields_for_order_statement},
                     :groupable => true),
     QueryColumn.new(:start_date, :sortable => "#{Issue.table_name}.start_date", :groupable => true),
@@ -70,7 +70,7 @@ class IssueQuery < Query
     QueryColumn.new(:relations, :caption => :label_related_issues),
     QueryColumn.new(:attachments, :caption => :label_attachment_plural),
     QueryColumn.new(:description, :inline => false),
-    QueryColumn.new(:last_notes, :caption => :label_last_notes, :inline => false)
+    QueryColumn.new(:last_notes, :caption => :label_last_notes, :inline => false),
   ]
 
   has_many :projects, foreign_key: 'default_issue_query_id', dependent: :nullify, inverse_of: 'default_issue_query'

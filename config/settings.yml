@@ -121,7 +121,7 @@ gantt_months_limit:
   format: int
   default: 24
 default_issue_query:
-  default: ''
+  default: 'sort=id&group_by=category'
 # Maximum size of files that can be displayed
 # inline through the file viewer (in KB)
 file_max_size_displayed:
@@ -217,12 +217,11 @@ mail_handler_preferred_body_part:
 issue_list_default_columns:
   serialized: true
   default:
-  - tracker
-  - status
-  - priority
   - subject
-  - assigned_to
-  - updated_on
+  - done_ratio
+  - start_date
+  - due_date
+  - status
 issue_list_default_totals:
   serialized: true
   default: []
