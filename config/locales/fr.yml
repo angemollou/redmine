@@ -295,6 +295,7 @@ fr:
   field_value: Valeur
   field_category: Categorie
   field_issue_category: Composante
+  field_issue_category_name: Nom
   field_title: Titre
   field_project: Projet
   field_issue: Étape importante

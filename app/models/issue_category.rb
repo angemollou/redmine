@@ -25,7 +25,8 @@ class IssueCategory < ActiveRecord::Base
 
   validates_presence_of :name
   validates_uniqueness_of :name, :scope => [:project_id], :case_sensitive => true
-  validates_length_of :name, :maximum => 60
+  # ChangeIssueCategoriesNameLimitToNil
+  # validates_length_of :name, :maximum => 60
 
   safe_attributes 'name', 'assigned_to_id'
 

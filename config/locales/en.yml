@@ -308,6 +308,7 @@ en:
   field_value: Value
   field_category: Category
   field_issue_category: Component
+  field_issue_category_name: Name
   field_title: Title
   field_project: Project
   field_issue: Important step

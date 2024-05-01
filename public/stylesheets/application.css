@@ -699,7 +699,8 @@ div.wiki a:target + h1, div.wiki a:target + h2, div.wiki a:target + h3, div.wiki
 
 form .attributes select { width: 60%; }
 form .attributes select + a.icon-only { vertical-align: middle; margin-left: 4px; }
-input#issue_subject, input#document_title { width: 99%; }
+input#issue_subject, input#document_title, select#issue_category_id { width: 99%; }
+p:has(> select#issue_category_id) { width:75% }
 select#issue_done_ratio { width: 95px; }
 
 ul.projects {margin:0; padding-left:1em;}
